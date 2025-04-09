@@ -5,11 +5,250 @@ import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+<MainLayout title="La Oranique" class="">
+<section id="hero" class="min-h-[66vh] mb-8 md:mb-24 lg:mb-32 w-full max-w-screen overflow-x-hidden">
+  <div class="hero min-h-screen" style="background-image: url('/hero.jpg');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">La Oranique</h1>
+      <p class="mb-5">
+        Le Oranique tilbyder et unikt udvalg af naturlige orangevine, lavet med økologiske druer og minimal indgriben. Oplev fyldige smage og komplekse aromaer i hver flaske.
+      </p>
+      <button class="btn btn-primary">Bestil nu!</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="stats" class="flex justify-center mb-8 md:mb-24 lg:mb-32">
+	<div class="stats stats-vertical lg:stats-horizontal shadow">
+		<div class="stat text-center">
+			<div class="stat-title">Flasker solgt</div>
+			<div class="stat-value">31K</div>
+			<div class="stat-desc">2025</div>
+		</div>
+	
+		<div class="stat text-center">
+			<div class="stat-title">Abonnementer</div>
+			<div class="stat-value">4,200</div>
+			<div class="stat-desc">↗︎ 400 (53%)</div>
+		</div>
+	
+		<div class="stat text-center">
+			<div class="stat-title">Leveringer</div>
+			<div class="stat-value">1,200</div>
+			<div class="stat-desc">↗︎ 90 (60%)</div>
+		</div>
+	</div>
+</section>
+
+<section id="tørstig" class="lg:mb-32 max-w-6xl ml-auto mr-auto">
+	<h2 class="text-xl md:text-2xl font-bold mb-4 text-center">Tørstig efter en flaske?</h2>
+	<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4 p-2">
+	  <div class="card bg-base-100 border border-base-300 md:w-full sm:w-auto shadow-sm">
+		<figure>
+		  <img src="/cardimg.jpg" alt="wine" class="w-full" />
+		</figure>
+		<div class="card-body">
+		  <h2 class="card-title">Le Orangevin</h2>
+		  <p>Populær for sine søde druer.</p>
+		  <div class="card-actions justify-end">
+			<button class="btn btn-secondary">Køb nu!</button>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="card bg-base-100 border border-base-300 w-full shadow-sm">
+		<figure>
+		  <img src="/cardimg.jpg" alt="wine" class="w-full" />
+		</figure>
+		<div class="card-body">
+		  <h2 class="card-title">Le Orangevin</h2>
+		  <p>Populær for sine søde druer.</p>
+		  <div class="card-actions justify-end">
+			<button class="btn btn-secondary">Køb nu!</button>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="card bg-base-100 border border-base-300 w-full shadow-sm">
+		<figure>
+		  <img src="/cardimg.jpg" alt="wine" class="w-full" />
+		</figure>
+		<div class="card-body">
+		  <h2 class="card-title">Le Orangevin</h2>
+		  <p>Populær for sine søde druer.</p>
+		  <div class="card-actions justify-end">
+			<button class="btn btn-secondary">Køb nu!</button>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="card bg-base-100 border border-base-300 w-full shadow-sm">
+		<figure>
+		  <img src="/cardimg.jpg" alt="wine" />
+		</figure>
+		<div class="card-body">
+		  <h2 class="card-title">Le Orangevin</h2>
+		  <p>Populær for sine søde druer.</p>
+		  <div class="card-actions justify-end">
+			<button class="btn btn-secondary">Køb nu!</button>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="card bg-base-100 border border-base-300 w-full shadow-sm">
+		<figure>
+		  <img src="/cardimg.jpg" alt="wine" />
+		</figure>
+		<div class="card-body">
+		  <h2 class="card-title">Le Orangevin</h2>
+		  <p>Populær for sine søde druer.</p>
+		  <div class="card-actions justify-end">
+			<button class="btn btn-secondary">Køb nu!</button>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="card bg-base-100 border border-base-300 w-full shadow-sm">
+		<figure>
+		  <img src="/cardimg.jpg" alt="wine" />
+		</figure>
+		<div class="card-body">
+		  <h2 class="card-title">Le Orangevin</h2>
+		  <p>Populær for sine søde druer.</p>
+		  <div class="card-actions justify-end">
+			<button class="btn btn-secondary">Køb nu!</button>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="card bg-base-100 border border-base-300 w-full shadow-sm">
+		<figure>
+		  <img src="/cardimg.jpg" alt="wine" />
+		</figure>
+		<div class="card-body">
+		  <h2 class="card-title">Le Orangevin</h2>
+		  <p>Populær for sine søde druer.</p>
+		  <div class="card-actions justify-end">
+			<button class="btn btn-secondary">Køb nu!</button>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="card bg-base-100 border border-base-300 w-full shadow-sm">
+		<figure>
+		  <img src="/cardimg.jpg" alt="wine" />
+		</figure>
+		<div class="card-body">
+		  <h2 class="card-title">Le Orangevin</h2>
+		  <p>Populær for sine søde druer.</p>
+		  <div class="card-actions justify-end">
+			<button class="btn btn-secondary">Køb nu!</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+
+<section id="abonnement" class="py-4 md:py-8 mb-8 md:mb-20 lg:mb-16">
+	<div class="max-w-lg md:max-w-4xl mx-auto mb-4 px-8 md:px-4">
+	  <h2 class="text-2xl font-bold mb-6">Tørstig efter et Le Oranquie abonnement</h2>
+  
+	  <div class="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-6">
+		
+		<!-- Kort 1 -->
+		<div class="card w-full bg-base-100 shadow-sm border border-base-300">
+		  <div class="card-body p-2">
+			<span class="badge badge-xs badge-warning">Få en flaske 1 gang pr. uge</span>
+			<div class="flex justify-between">
+			  <h2 class="text-xl md:text-3xl font-bold">Lidt tørstig</h2>
+			  <span class="text-md md:text-xl">800,-/ måned</span>
+			</div>
+			<ul class="mt-6 flex flex-col gap-2 text-sm">
+			  <li>
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+				</svg>
+				<span>2 flasker & 1 plade chokolade</span>
+			  </li>
+			  <li>
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+				</svg>
+				<span>Orangevin, hvidvin & snaps</span>
+			  </li>
+			  <li class="opacity-50">
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+				</svg>
+				<span class="line-through">Gratis fragt</span>
+			  </li>
+			</ul>
+			<div class="mt-6">
+			  <button class="btn btn-secondary btn-block">Tilmeld nu!</button>
+			</div>
+		  </div>
+		</div>
+  
+		<!-- Kort 2 -->
+		<div class="card md:w-full w-a bg-base-100 shadow-sm border border-base-300">
+		  <div class="card-body p-2">
+			<span class="badge badge-xs badge-success">Få en flaske 3 gang pr. uge</span>
+			<div class="flex justify-between items-center">
+			  <h2 class="text-xl md:text-3xl font-bold">Meget tørstig</h2>
+			  <span class="text-sm md:text-xl">1400 ,-/ måned</span>
+			</div>
+			<ul class="mt-6 flex flex-col gap-2 text-sm">
+			  <li>
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+				</svg>
+				<span>4 flasker & 2 plader chokolade</span>
+			  </li>
+			  <li>
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+				</svg>
+				<span>Orangevin, rødvin & dessertvin</span>
+			  </li>
+			  <li>
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+				</svg>
+				<span>Gratis fragt</span>
+			  </li>
+			</ul>
+			<div class="mt-6">
+			  <button class="btn btn-secondary btn-block">Tilmeld nu!</button>
+			</div>
+		  </div>
+		</div>
+  
+	  </div>
+	</div>
+  </section>
+
+<section id="spørgsmål" class="mb-8 md:mb-20 lg:mb-16">
+<div class="max-w-sm md:max-w-xl mx-auto">
+	<h2 class="text-2xl font-bold mb-6 text-center">Spørgsmål?</h2>
+	<fieldset class="fieldset w-full bg-base-200 border border-base-300 p-4 rounded-box">
+		<legend class="fieldset-legend text-left text-xl">Kontakt kundeservice</legend>
+		
+		<label class="fieldset-label">Navn</label>
+		<input type="text" class="input w-full mb-4 bg-base-300" placeholder="Vino Madsen" />
+		
+		<label class="fieldset-label">Email</label>
+		<input type="email" class="input w-full mb-4 bg-base-300" placeholder="Vino@madsen.dk" />
+		
+		<label class="fieldset-label">Spørgsmål</label>
+		<textarea class="textarea w-full mb-4 bg-base-300"  placeholder="Der findes ingen dumme spørgsmål!"></textarea>
+		
+		<button class="btn btn-primary w-full">Send</button>
+	  </fieldset>
+</div>
+</section>
+  
 </MainLayout>
