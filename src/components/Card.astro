@@ -1,0 +1,18 @@
+---
+const {url="#", cardimage="", cardimagealt="", cardtitel="", cardtekst="", cardbuttontekst=""}= Astro.props;
+---
+
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src={cardimage}
+      alt={cardimagealt} />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">{cardtitel}</h2>
+    <p>{cardtekst}</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">{cardbuttontekst}</button>
+    </div>
+  </div>
+</div>
