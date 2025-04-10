@@ -2,7 +2,7 @@
 const {url="#", cardimage="", cardimagealt="", cardtitel="", cardtekst="", cardbuttontekst=""}= Astro.props;
 ---
 
-<div class="card bg-base-100 w-96 shadow-sm">
+<div class="card bg-base-100 w-auto shadow-sm @container">
   <figure>
     <img
       src={cardimage}
