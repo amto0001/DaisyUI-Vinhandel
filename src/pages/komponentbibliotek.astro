@@ -4,6 +4,7 @@ import Button from '../components/Button.astro';
 import Heading from '../components/Heading.astro';
 import Link from '../components/Link.astro';
 import Card from '../components/Card.astro'
+import Tekst from '../components/Tekst.astro';
 ---
 <MainLayout>
 
@@ -56,6 +57,18 @@ import Card from '../components/Card.astro'
 </section>
 <!-- slut på typografi -->
 
+ <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 p-2 md: m-24">
+<Tekst teksttype="manchet" stylingclasses="pt-8">
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim!
+</Tekst>
+<Tekst teksttype="brødtekst" stylingclasses="pt-8">
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim!
+</Tekst>
+<Tekst teksttype="konsultativ" stylingclasses="pt-4">
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim!
+</Tekst>
+</div>
+
 <h2 class="mb-5 text-3xl font-bold md: m-24" >CARD</h2>
 
 <!-- start på card -->
@@ -73,5 +86,4 @@ import Card from '../components/Card.astro'
 ></Card>
 </div>
 <!-- slut på card -->
-
  </MainLayout>
