@@ -1,0 +1,44 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Heading from '../components/Heading.astro';
+import Link from '../components/Link.astro';
+---
+<MainLayout>
+
+<h1 class="mb-5 text-5xl font-bold md: m-24">KOMPONENTBIBLIOTEK</h1>
+
+<h2 class="mb-5 text-3xl font-bold md: m-24" >Button</h2>
+<!-- start på buttons -->
+<section class="container mx-auto m-sectiontop px-4">
+<Heading htmlheading="h2" size="large" stylingclasses="m-sectionheading">Buttons</Heading>
+<p><Button>Default knap</Button></p>
+<p><Button variant="primary">Variant primary</Button></p>
+<p><Button variant="primary" size="small">Variant primary size small</Button></p>
+<p><Button variant="primary" size="medium">Variant primary size medium</Button></p>
+<p><Button variant="primary" size="large">Variant primary size large</Button></p>
+<p><Button variant="secondary" size="small">Variant secondary size small</Button></p>
+<p><Button variant="secondary" size="medium">Variant secondary size medium</Button></p>
+<p><Button variant="secondary" size="large">Variant secondary size large</Button></p>
+<hr class="mt-20 border-accent">
+</section>
+<!-- slut på buttons -->
+
+<h2 class="mb-5 text-3xl font-bold md: m-24" >Link</h2>
+
+<!-- start på buttons -->
+<section class="container mx-auto m-sectiontop px-4">
+<Heading htmlheading="h2" size="large" stylingclasses="m-sectionheading">Links</Heading>
+<p><Link>Default link</Link></p>
+<p><Link variant="primary">Variant primary</Link></p>
+<p><Link variant="primary" size="small">Variant primary size small</Link></p>
+<p><Link variant="primary" size="medium">Variant primary size medium</Link></p>
+<p><Link variant="primary" size="large">Variant primary size large</Link></p>
+<p><Link variant="secondary" size="small">Variant secondary size small</Link></p>
+<p><Link variant="secondary" size="medium">Variant secondary size medium</Link></p>
+<p><Link variant="secondary" size="large">Variant secondary size large</Link></p>
+<hr class="mt-20 border-accent">
+</section>
+
+
+ </MainLayout>
