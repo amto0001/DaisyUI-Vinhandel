@@ -1,10 +1,9 @@
 ---
 // Henter parametrene fra Astro.props
-const { href="#", target="_self", variant="tekstlink",
-size="default" } = Astro.props;
+const { href="#", target="_self", variant="tekstlink", size="inherit" } = Astro.props;
 
 //Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
-const linkStyling = "";
+const linkStyling = "underline";
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
 const variantClasses = {
@@ -14,7 +13,7 @@ const variantClasses = {
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskelligeog størrelser.
 const sizeClasses = {
-    "default":"",
+    "inherit":"",
     "large":"btn-lg",
     "medium":"",
     "small":"btn-sm"};

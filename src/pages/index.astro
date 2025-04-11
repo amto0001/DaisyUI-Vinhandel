@@ -12,10 +12,9 @@ import Card from "../components/Card.astro";
   <div class="hero-overlay"></div>
   <div class="hero-content text-neutral-content text-center">
     <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold">La Oranique</h1>
+      <h1 class="mb-5 text-5xl font-bold">Vin de Copains</h1>
       <p class="mb-5">
-        Le Oranique tilbyder et unikt udvalg af naturlige orangevine, lavet med økologiske druer og minimal indgriben. Oplev fyldige smage og komplekse aromaer i hver flaske.
-      </p>
+Vin skal drikkes i godt selskab. Vin de Copains handler om naturvin, der bringer folk sammen – uden regler, uden snobberi, bare god vin og gode vibes.      </p>
 
 	 <a href="/komponentbibliotek" class="btn btn-primary">Bestil nu!</a>
     </div>
@@ -54,15 +53,19 @@ import Card from "../components/Card.astro";
 			cardimage="cardimg.jpg"
 			cardimagealt="wine"
 			cardtitel="Naturvin"
-			cardtekst="Frugtug og sød"
+			cardtekst="Let, juicy og lidt funky. Ufiltreret naturvin med masser af karakter"
 			cardbuttontekst="køb her"
+			badgenyt="true"
+	 		badgerabat="false"
+	 		badgefaatilbage="false"
+
 		></Card>
 		<Card
 			url="/singleview"
 cardimage="cardimg.jpg"
 cardimagealt="wine"
 cardtitel="Naturvin"
-cardtekst="Frugtug og sød"
+cardtekst="Let, juicy og lidt funky. Ufiltreret naturvin med masser af karakter og nul bullshit.d"
 cardbuttontekst="køb her"
 		></Card>
 		<Card
@@ -70,31 +73,34 @@ url="/singleview"
 cardimage="cardimg.jpg"
 cardimagealt="wine"
 cardtitel="Naturvin"
-cardtekst="Frugtug og sød"
+cardtekst="Let, juicy og lidt funky. Ufiltreret naturvin med masser af karakter og nul bullshit."
 cardbuttontekst="køb her"
+		></Card>
+		<Card
+			url="/singleview"
+			cardimage="cardimg.jpg"
+			cardimagealt="wine"
+			cardtitel="Naturvin"
+			cardtekst="Let, juicy og lidt funky. Ufiltreret naturvin med masser af karakter og nul bullshit."
+			cardbuttontekst="køb her"
 		></Card>
 		<Card
 url="/singleview"
 cardimage="cardimg.jpg"
 cardimagealt="wine"
 cardtitel="Naturvin"
-cardtekst="Frugtug og sød"
+cardtekst="Let, juicy og lidt funky. Ufiltreret naturvin med masser af karakter og nul bullshit."
 cardbuttontekst="køb her"
+badgenyt="false"
+	 		badgerabat="10%"
+	 		badgefaatilbage="false"
 		></Card>
 		<Card
 url="/singleview"
 cardimage="cardimg.jpg"
 cardimagealt="wine"
 cardtitel="Naturvin"
-cardtekst="Frugtug og sød"
-cardbuttontekst="køb her"
-		></Card>
-		<Card
-url="/singleview"
-cardimage="cardimg.jpg"
-cardimagealt="wine"
-cardtitel="Naturvin"
-cardtekst="Frugtug og sød"
+cardtekst="Let, juicy og lidt funky. Ufiltreret naturvin med masser af karakter og nul bullshit."
 cardbuttontekst="køb her"
 		></Card>
 		
@@ -104,7 +110,7 @@ cardbuttontekst="køb her"
 
 <section id="abonnement" class="py-4 md:py-8 mb-8 md:mb-20 lg:mb-16">
 	<div class="max-w-lg md:max-w-4xl mx-auto mb-4 px-8 md:px-4">
-	  <h2 class="text-2xl font-bold mb-6">Tørstig efter et Le Oranquie abonnement</h2>
+	  <h2 class="text-2xl font-bold mb-6">Abonnement hos Vin de Copains</h2>
   
 	  <div class="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-6">
 		
@@ -183,9 +189,9 @@ cardbuttontekst="køb her"
 
 <section id="spørgsmål" class="mb-8 md:mb-20 lg:mb-16">
 <div class="max-w-sm md:max-w-xl mx-auto">
-	<h2 class="text-2xl font-bold mb-6 text-center">Spørgsmål?</h2>
+	<h2 class="text-2xl font-bold mb-6 text-center">Brug for hjælp?</h2>
 	<fieldset class="fieldset w-full bg-base-200 border border-base-300 p-4 rounded-box">
-		<legend class="fieldset-legend text-left text-xl">Kontakt kundeservice</legend>
+		<legend class="fieldset-legend text-left text-lg">Kontakt kundeservice</legend>
 		
 		<label class="fieldset-label">Navn</label>
 		<input type="text" class="input w-full mb-4 bg-base-300" placeholder="Vino Madsen" />

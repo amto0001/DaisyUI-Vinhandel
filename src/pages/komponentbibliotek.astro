@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Heading from '../components/Heading.astro';
 import Link from '../components/Link.astro';
+import Card from '../components/Card.astro'
 ---
 <MainLayout>
 
@@ -29,7 +30,7 @@ import Link from '../components/Link.astro';
 <!-- start på buttons -->
 <section class="container mx-auto m-sectiontop px-4">
 <Heading htmlheading="h2" size="large" stylingclasses="m-sectionheading">Links</Heading>
-<p><Link>Default link</Link></p>
+<p class="text-bold" ><Link href="#" variant="textlink" size="inherit">Default link</Link></p>
 <p><Link variant="primary">Variant primary</Link></p>
 <p><Link variant="primary" size="small">Variant primary size small</Link></p>
 <p><Link variant="primary" size="medium">Variant primary size medium</Link></p>
@@ -40,5 +41,37 @@ import Link from '../components/Link.astro';
 <hr class="mt-20 border-accent">
 </section>
 
+
+<h2 class="mb-5 text-3xl font-bold md: m-24" >HEADING</h2>
+
+<!-- start på typografi -->
+<section class="container mx-auto m-sectiontop px-4">
+<Heading  htmlheading="h2" size="large" stylingclasses="m-sectionheading">Typografi</Heading>
+<Heading htmlheading="h1" size="xlarge">h1 xlarge</Heading>
+<Heading htmlheading="h2" size="large">h2 large</Heading>
+<Heading htmlheading="h3" size="medium">h3 medium</Heading>
+<Heading htmlheading="h3" size="small">h4 small</Heading>
+<p>Og her en sektion brødtekst</p>
+<hr class="mt-20 border-accent">
+</section>
+<!-- slut på typografi -->
+
+<h2 class="mb-5 text-3xl font-bold md: m-24" >CARD</h2>
+
+<!-- start på card -->
+ <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 p-2 md: m-24">
+<Card
+	url="/singleview"
+	cardimage="cardimg.jpg"
+	cardimagealt="wine"
+	cardtitel="Naturvin"
+	cardtekst="Let, juicy og lidt funky. Ufiltreret naturvin med masser af karakter"
+	cardbuttontekst="køb her"
+	badgenyt="true"
+	badgerabat="false"
+	badgefaatilbage="false"
+></Card>
+</div>
+<!-- slut på card -->
 
  </MainLayout>

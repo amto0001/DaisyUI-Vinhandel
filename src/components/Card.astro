@@ -1,18 +1,33 @@
 ---
-const {url="#", cardimage="", cardimagealt="", cardtitel="", cardtekst="", cardbuttontekst=""}= Astro.props;
+/* Her henter man sine astro props, som referere til index filens props */
+const { url="#", cardimage="", cardimagealt="", badgenyt="false", badgerabat="false", 
+badgefaatilbage="false", cardtekst="", cardbuttontekst="Køb nu!", cardtitel="" } = Astro.props;
+import Link from "./Link.astro";
+import Heading from "./Heading.astro";
 ---
 
-<div class="card bg-base-100 w-auto shadow-sm @container">
-  <figure>
-    <img
-      src={cardimage}
-      alt={cardimagealt} />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">{cardtitel}</h2>
-    <p>{cardtekst}</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">{cardbuttontekst}</button>
+<article class="card bg-base-100 border border-base-300 md:w-full sm:w-auto shadow-sm @container">
+    <figure>
+        {(badgenyt==="true") && <div class="badge badge-primary bg-success border-none sm:p-4 absolute top-4 left-0 md:p-5">Ny vin!</div>}
+        {(badgerabat!=="false") && <div class="bagde sm:p-1 md:p-2 badge-secondary bg-warning rounded-full absolute top-4 right-0 rotate-0 hover:rotate-6 transition-all"><span>{badgerabat} rabat!</span></div>}
+        {(badgefaatilbage==="true") && <div class="bagde badge-warning bg-error rounded-full absolute align-middle left-2 md:p-2 @sm:badge-xl">Kun få flasker tilbage!</div>}
+        <img 
+        src={cardimage} 
+        alt={cardimagealt}/>
+    </figure>
+    <div class="card-body p-3">
+        <Heading htmlheading="h2" size="medium" stylingclasses="card-titel">{cardtitel}</Heading>
+        <p>{cardtekst}</p>
+        <div class="card-actions justify-end">
+            <Link href={url} variant="primary">{cardbuttontekst}</Link>
+        </div>
     </div>
-  </div>
-</div>
+</article>
+
+<!-- Forklaring: 1. const definere de props vi skal hente og indsætte i kortet. Fx cardimage="" 
+ betyder at card komponenten skal hente det billede der i index og indsætte her -->
+
+<!-- 2. <article> er kortet og indeholder de props vi har defineret i const. -->
+<!-- 3. <figure> er billedet og <img> er selve billedet. src={cardimage} henter det billede vi har-->
+
+<!-- Note til astro props: det er astro props der er skrevet inde i {} -->
